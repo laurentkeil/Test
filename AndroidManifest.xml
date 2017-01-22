@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sdz.test"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21" />
+    
+ 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+ 	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ImcActivity"
+            android:label="IMC"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/title_activity_test" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sdz.displayingSimple.MainActivity"
+            android:label="Main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sdz.notepad.NotepadActivity"
+            android:label="Notepad" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sdz.intent.SelectionMultipleActivity"
+            android:label="@string/title_activity_selection_multiple" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sdz.intent.AfficherSelectionActivity"
+            android:label="@string/title_activity_afficher_selection" >
+        </activity>
+        <activity
+            android:name="com.sdz.displayingSimple.DialogActivity"
+            android:label="@string/title_activity_dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PreferenceActivityExample"
+            android:label="@string/title_activity_preference_activity_example" >
+        </activity>
+        
+        <activity
+            android:name="com.sdz.explorer.ExplorateurActivity"
+            android:label="@string/title_activity_explorateur" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sdz.explorer.ExploreurPreference"
+            android:label="@string/title_activity_exploreur_preference" >
+        </activity>
+        <receiver
+            android:name="com.sdz.explorer.ExplorerReceiver"
+            android:exported="false">
+            <intent-filter> 
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+            </intent-filter>
+        </receiver>
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical" >
+
+	<TextView
+	    android:id="@+id/textSexe"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Quel est votre sexe :" />
+
+    <!-- On choisit le mode de sélection avec android:choiceMode -->
+    <ListView
+      android:id="@+id/listSexe"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:choiceMode="singleChoice" >
+    </ListView>
+
+    <TextView
+      android:id="@+id/textProg"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="Quel(s) langage(s) maîtrisez-vous :" />
+    
+			    <ListView
+			      android:id="@+id/listProg"
+			      android:layout_width="fill_parent"
+			      android:layout_height="wrap_content"
+			      android:choiceMode="multipleChoice" >
+			    </ListView>
+
+	<ScrollView
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	
+		<LinearLayout
+		  android:layout_width="fill_parent"
+		  android:layout_height="fill_parent"
+		  android:orientation="vertical" >
+					    
+		    <Button
+		      android:id="@+id/send"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:layout_gravity="center"
+		      android:text="Envoyer" />
+		    
+		    <Button
+		      android:id="@+id/send1"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:layout_gravity="center"
+		      android:text="Sans retour" />
+		    
+		    <Button
+		      android:id="@+id/send2"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:layout_gravity="center"
+		      android:text="Avec retour" />
+		    
+		    <Button
+		      android:id="@+id/send3"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:layout_gravity="center"
+		      android:text="Ouvrir tel" />
+		    
+		    <Button
+		      android:id="@+id/write"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:layout_gravity="center"
+		      android:text="Stocker pseudo" />
+
+		    <Button
+		      android:id="@+id/read"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:layout_gravity="center"
+		      android:text="Récup pseudo" />
+		    
+		</LinearLayout>
+		
+    </ScrollView>
+    
+</LinearLayout>

@@ -1,0 +1,21 @@
+Android :
+---------
+
+1) Configuration d'un projet
+2) Créer des layout avec bouttons etc / fichiers xml + disposition
+3) Connaître les différents layouts / vues / widgets (Relative/slider/Linear/Table/Frame/Scroll...)
+4) Gérer les ressources / strings / styles / drawables + draw9 / fichiers de langues ...
+6) Création d'activités et intéragir avec la vue avec fichiers java
+5) Gérer les animations
+7) Listing et adapter (Array/simple/ListView/GridView/Spinner + perso)
+8) Dialog + widgets avancés...
+9) Gestion du menu d'options et des menu contextuels
+10) Vue perso en java ou xml...
+11) fichier Manifest/ thèmes / permissions
+12) Gérer le cycle d'activités
+13) gérer les changements de config (ex: portrait/paysage) / de ressources
+14) Communication entre composants / activités : Sérialisation et parcelable
+15) Communication entre composants / activités : Intent explicite avec et sans retour et implicite / résolution des intents
+16) Communication entre composants / activités : Réaction de navigation / gestion d'affinités des tâches + diffusion (broadcasts) et sécurité
+17) Préférence partagée
+18) Manipulation de fichier (interne/externe/cache)
